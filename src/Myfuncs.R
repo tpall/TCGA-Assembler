@@ -1,8 +1,8 @@
 
 # convert .RData -> .rdb/.rdx
-traversResult <- local({load(travRes); environment()})
-tools:::makeLazyLoadDB(traversResult, "New")
-lazyLoad("New")
+tools:::makeLazyLoadDB(local({load(travRes); environment()}), 
+                       "DirectoryTraverseResult_5-Jun-2015")
+lazyLoad("DirectoryTraverseResult_5-Jun-2015")
 ls()
 x 
 
